@@ -16,7 +16,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install poetry
-          pip install wemake-python-styleguide
+          pip install flake8
       - name: WPS Linter Check
         run: |
           make lint
