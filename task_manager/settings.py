@@ -30,7 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "alekorn-task-manager.herokuapp.com",
-    "localhost"
+    "localhost",
+    "webserver",
     ]
 
 
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'task_manager',
+    'bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]

@@ -15,9 +15,11 @@ Including another URLconf
 """
 from task_manager import views
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='home'),
+    path('login/', views.login, name='signin'),
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
