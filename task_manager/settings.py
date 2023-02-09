@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
-    "alekorn-task-manager.herokuapp.com",
+    'web-production-7a11.up.railway.app',
     "localhost",
     "webserver",
     ]
