@@ -29,7 +29,6 @@ print("SECRET ---> ", SECRET_KEY)
 print("DATABASE_URL ---> ", os.getenv("DATABASE_URL"))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.getenv("DEBUG", default=0))
-print('DEBUG ---> ', DEBUG)
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
